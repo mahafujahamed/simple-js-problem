@@ -7,5 +7,20 @@
 // না হয় সে ক্ষে ত্রে তুমি একটা মি নি ংফুল মে সে জ রি টার্ন করে দিবে ।
 
 function matchFinder(str1, str2) {
-    
+    if (typeof str1 === 'string' && typeof str2 === 'string'){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+const input1 = "javaScript";
+const input2 = 9;
+const result = matchFinder(input1, input2);
+
+if(result) {
+    console.log("Match Found");
+}
+else{
+    console.log("Match Not Found");
 }
